@@ -1,0 +1,27 @@
+language-tags {
+	en
+}
+
+vocabulary ex {
+	prefix "ex" "http://example.com/ns#"
+
+	classes
+		Employee
+		Department
+
+	properties
+		name
+		department
+}
+
+vocabulary schema {
+	prefix "schema" "http://schema.org/"
+
+	classes
+		Place
+
+	properties
+		location
+		name
+}
+

@@ -1,0 +1,29 @@
+source-group exampledatabase {
+	type rdb
+
+	logical-source employee {
+		source "EMP2"
+
+		referenceables
+			EMPNO
+			ENAME
+			JOB
+	}
+
+	logical-source department {
+		source "DEPT2"
+
+		referenceables
+			DEPTNO
+			DNAME
+			LOC
+	}
+
+	logical-source employee_department {
+		source "EMP2DEPT"
+
+		referenceables
+			EMPNO
+			DEPTNO
+	}
+}

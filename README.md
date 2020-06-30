@@ -1,8 +1,11 @@
 # Mapping from MySQL to RDF Triples
 
-Using Zazuko's [Expressive RDF Mapper (XRM)](https://github.com/zazuko/expressive-rdf-mapper).
+This repository is a full example showing how Zazuko [Expressive RDF Mapper (XRM)](https://github.com/zazuko/expressive-rdf-mapper)
+can be used together with [Ontop](https://github.com/ontop/ontop) to generate triples out of a MySQL database.
 
-The Eclipse plugin or the VS Code extension, the project will automatically write the mapping to [`./src-gen`](./src-gen).
+For this example, we will use a basic [example database](https://www.w3.org/TR/r2rml/#example-input-database) from the R2RML W3C Recommendation.
+
+Using the *Expressive RDF Mapper* Eclipse plugin or the VS Code extension, the project will automatically write the mapping to [`./src-gen`](./src-gen).
 
 ## Prerequisites
 

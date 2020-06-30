@@ -16,6 +16,7 @@ else
   cp mysql-connector-java-5.1.49/mysql-connector-java-5.1.49.jar ontop/jdbc/
 fi
 
+touch triples.nt
 BEFORE=$(wc -l triples.nt)
 ./ontop/ontop materialize -m ../src-gen/mapping.r2rml.ttl -f ntriples -o ./triples.nt -p mysql.properties
 

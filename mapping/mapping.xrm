@@ -1,0 +1,44 @@
+output r2rml
+
+template employeeIRI "http://data.example.com/employee/{0}"
+template departmentIRI "http://data.example.com/department/{0}"
+template locationIRI "http://data.example.com/location/{0}"
+
+map Employee from exampledatabase.employee {
+	subject template employeeIRI with EMPNO;
+
+	types
+		ex.Employee
+
+	properties
+		ex.name from ENAME;
+}
+
+map Department from exampledatabase.department {
+	subject template departmentIRI with DEPTNO;
+
+	types
+		ex.Department
+
+	properties
+		ex.name from DNAME with language-tag en;
+		schema.location template locationIRI with LOC;
+}
+
+map Employee2Department from exampledatabase.employee_department {
+	subject template employeeIRI with EMPNO;
+
+	properties
+		ex.department template departmentIRI with DEPTNO;
+}
+
+
+map Location from exampledatabase.department {
+	subject template locationIRI with LOC;
+
+	types
+		schema.Place
+
+	properties
+		schema.name from LOC with language-tag en;
+}
