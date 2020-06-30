@@ -1,0 +1,18 @@
+version: '3.1'
+services:
+  db:
+    image: mysql:5
+    command: --max_allowed_packet=20M
+    volumes:
+      - ./mysql.cnf:/etc/mysql/conf.d/custom.cnf
+      - ../example-database.sql:/docker-entrypoint-initdb.d/example-database.sql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: public
+  admin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - db:db
+    ports:
+      - 8080:80
