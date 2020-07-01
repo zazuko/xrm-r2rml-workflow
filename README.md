@@ -1,6 +1,8 @@
-# Mapping from MySQL to RDF Triples
+# Template for Mapping from MySQL to RDF Triples using XRM
 
-This repository is a full example showing how Zazuko [Expressive RDF Mapper (XRM)](https://github.com/zazuko/expressive-rdf-mapper)
+Use this repo as template to set up a project-specific mapping project.
+
+This repository is structured as a full example showing how Zazuko [Expressive RDF Mapper (XRM)](https://github.com/zazuko/expressive-rdf-mapper)
 can be used together with [Ontop](https://github.com/ontop/ontop) to generate triples out of a MySQL database.
 
 For this example, we will use a basic [example database](https://www.w3.org/TR/r2rml/#example-input-database) from the R2RML W3C Recommendation.
