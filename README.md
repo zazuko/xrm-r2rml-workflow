@@ -2,8 +2,9 @@
 
 Use this repo as template to set up a project-specific mapping project.
 
-This repository is structured as a full example showing how Zazuko [Expressive RDF Mapper (XRM)](https://github.com/zazuko/expressive-rdf-mapper)
-can be used together with [Ontop](https://github.com/ontop/ontop) to generate triples out of a MySQL database.
+This repository is structured as a full example showing how Zazuko [Expressive RDF Mapper (XRM)](https://zazuko.com/products/expressive-rdf-mapper/)
+can be used together with [Ontop](https://github.com/ontop/ontop) to generate triples out of a MySQL database. See our [product page](https://zazuko.com/products/expressive-rdf-mapper/) and the [documentation](https://github.com/zazuko/expressive-rdf-mapper) for editing instructions.
+
 
 For this example, we will use a basic [example database](https://www.w3.org/TR/r2rml/#example-input-database) from the R2RML W3C Recommendation.
 
