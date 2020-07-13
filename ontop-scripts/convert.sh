@@ -9,8 +9,8 @@ else
   # install ontop
   mkdir ontop
   cd ontop
-  wget https://github.com/ontop/ontop/releases/download/ontop-4.0.0-beta-1/ontop-cli-4.0.0-beta-1.zip
-  unzip ontop-cli-4.0.0-beta-1.zip
+  wget https://github.com/ontop/ontop/releases/download/ontop-4.0.0-rc-1/ontop-cli-4.0.0-rc-1.zip
+  unzip ontop-cli-4.0.0-rc-1.zip
   cd ..
   # install mysql driver
   cp mysql-connector-java-5.1.49/mysql-connector-java-5.1.49.jar ontop/jdbc/
