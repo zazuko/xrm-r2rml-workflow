@@ -1,17 +1,17 @@
-<http://data.example.com/department/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ns#Department> .
-<http://data.example.com/department/20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ns#Department> .
 <http://data.example.com/location/NEW%20YORK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place> .
 <http://data.example.com/location/BOSTON> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Place> .
+<http://data.example.com/department/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ns#Department> .
+<http://data.example.com/department/20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ns#Department> .
 <http://data.example.com/employee/7369> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ns#Employee> .
 <http://data.example.com/employee/7400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.com/ns#Employee> .
+<http://data.example.com/location/NEW%20YORK> <http://schema.org/name> "NEW YORK"@en .
+<http://data.example.com/location/BOSTON> <http://schema.org/name> "BOSTON"@en .
 <http://data.example.com/department/10> <http://schema.org/location> <http://data.example.com/location/NEW%20YORK> .
 <http://data.example.com/department/20> <http://schema.org/location> <http://data.example.com/location/BOSTON> .
-<http://data.example.com/employee/7369> <http://example.com/ns#name> "SMITH" .
-<http://data.example.com/employee/7400> <http://example.com/ns#name> "JONES" .
 <http://data.example.com/department/10> <http://example.com/ns#name> "APPSERVER"@en .
 <http://data.example.com/department/20> <http://example.com/ns#name> "RESEARCH"@en .
+<http://data.example.com/employee/7369> <http://example.com/ns#name> "SMITH" .
+<http://data.example.com/employee/7400> <http://example.com/ns#name> "JONES" .
 <http://data.example.com/employee/7369> <http://example.com/ns#department> <http://data.example.com/department/10> .
 <http://data.example.com/employee/7369> <http://example.com/ns#department> <http://data.example.com/department/20> .
 <http://data.example.com/employee/7400> <http://example.com/ns#department> <http://data.example.com/department/10> .
-<http://data.example.com/location/NEW%20YORK> <http://schema.org/name> "NEW YORK"@en .
-<http://data.example.com/location/BOSTON> <http://schema.org/name> "BOSTON"@en .
