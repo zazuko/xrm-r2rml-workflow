@@ -3,69 +3,78 @@ PREFIX ex: <http://example.com/ns#>
 PREFIX schema: <http://schema.org/>
 
 <#Employee>
+	a rr:TriplesMap;
+	
 	rr:logicalTable [ rr:tableName "EMP2" ];
 	
 	rr:subjectMap [
-		rr:template "http://data.example.com/employee/{EMPNO}" ;
-		rr:class ex:Employee ;
+		rr:template "http://data.example.com/employee/{EMPNO}";
+		rr:class ex:Employee
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicate ex:name ;
+		rr:predicate ex:name;
 		rr:objectMap [
-			rr:column "ENAME" ;
-		];
-	]
-.
+			rr:column "ENAME"
+		]
+	].
+	
 <#Department>
+	a rr:TriplesMap;
+	
 	rr:logicalTable [ rr:tableName "DEPT2" ];
 	
 	rr:subjectMap [
-		rr:template "http://data.example.com/department/{DEPTNO}" ;
-		rr:class ex:Department ;
+		rr:template "http://data.example.com/department/{DEPTNO}";
+		rr:class ex:Department
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicate ex:name ;
+		rr:predicate ex:name;
 		rr:objectMap [
-			rr:column "DNAME" ;
-			rr:language "en" ;
-		];
+			rr:column "DNAME";
+			rr:language "en"
+		]
 	];
+	
 	rr:predicateObjectMap [
-		rr:predicate schema:location ;
+		rr:predicate schema:location;
 		rr:objectMap [
-			rr:template "http://data.example.com/location/{LOC}" ;
-		];
-	]
-.
+			rr:template "http://data.example.com/location/{LOC}"
+		]
+	].
+	
 <#Employee2Department>
+	a rr:TriplesMap;
+	
 	rr:logicalTable [ rr:tableName "EMP2DEPT" ];
 	
 	rr:subjectMap [
-		rr:template "http://data.example.com/employee/{EMPNO}" ;
+		rr:template "http://data.example.com/employee/{EMPNO}"
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicate ex:department ;
+		rr:predicate ex:department;
 		rr:objectMap [
-			rr:template "http://data.example.com/department/{DEPTNO}" ;
-		];
-	]
-.
+			rr:template "http://data.example.com/department/{DEPTNO}"
+		]
+	].
+	
 <#Location>
+	a rr:TriplesMap;
+	
 	rr:logicalTable [ rr:tableName "DEPT2" ];
 	
 	rr:subjectMap [
-		rr:template "http://data.example.com/location/{LOC}" ;
-		rr:class schema:Place ;
+		rr:template "http://data.example.com/location/{LOC}";
+		rr:class schema:Place
 	];
 	
 	rr:predicateObjectMap [
-		rr:predicate schema:name ;
+		rr:predicate schema:name;
 		rr:objectMap [
-			rr:column "LOC" ;
-			rr:language "en" ;
-		];
-	]
-.
+			rr:column "LOC";
+			rr:language "en"
+		]
+	].
+	

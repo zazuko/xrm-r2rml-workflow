@@ -2,7 +2,7 @@
 
 * Starting the DB and loading `../example-database.sql` into it
 
-    `docker-compose up -d`
+    `docker compose up -d`
 
 * MySQL Shell
 
