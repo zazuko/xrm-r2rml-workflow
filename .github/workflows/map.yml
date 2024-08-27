@@ -6,9 +6,9 @@ jobs:
   transform:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Cache ontop
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         env:
           cache-name: cache-mix-deps
         with:
@@ -19,7 +19,7 @@ jobs:
             ${{ runner.os }}-deps-
             ${{ runner.os }}-
       - run: make
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: triples.nt
           path: ontop-scripts/triples.nt
